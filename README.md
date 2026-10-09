@@ -56,7 +56,6 @@ JSON5 Visualizer lets you paste JSON5 input, validates it in real time, and rend
 ```
 .
 ├── index.html
-├── metadata.json
 ├── package.json
 ├── tsconfig.json
 ├── vite.config.ts
