@@ -1,54 +1,20 @@
-# JSON Compiler
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-JSON Compiler is a simple web app that helps you build store data into JSON.
+# Run and deploy your AI Studio app
 
-You group stores into "units", fill in the details, watch the JSON update live,
-and export it as a ready-to-use `.json` file. Everything runs in your browser.
+This contains everything you need to run your app locally.
 
-## Features
+View your app in AI Studio: https://ai.studio/apps/ef9918e0-c78a-48f4-a8b5-d8b313ecbf22
 
-- Group stores into units
-- Add a name, image URL, and overview for each store
-- See the JSON update live as you type
-- Copy the JSON to your clipboard
-- Export the result as a `.json` file
+## Run Locally
 
-## Requirements
+**Prerequisites:**  Node.js
 
-- [Node.js](https://nodejs.org) (version 18 or newer)
 
-## Getting Started
-
-1. Install the dependencies:
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app:
-
-   ```bash
-   npm run dev
-   ```
-
-3. Open the URL shown in your terminal (usually http://localhost:3000).
-
-## Available Scripts
-
-- `npm run dev` — Run the app for local development
-- `npm run build` — Build the app for production
-- `npm run preview` — Preview the production build
-- `npm run lint` — Check the code for type errors
-- `npm run clean` — Delete the build output
-
-## Built With
-
-- [React](https://react.dev)
-- [Vite](https://vitejs.dev)
-- [TypeScript](https://www.typescriptlang.org)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Lucide Icons](https://lucide.dev)
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
