@@ -1,0 +1,5 @@
+{
+  "name": "JSON Compiler",
+  "description": "A tool to compile business topics and store overviews into JSON format.",
+  "requestFramePermissions": []
+}
