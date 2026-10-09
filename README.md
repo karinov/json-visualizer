@@ -1,20 +1,75 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# JSON5 Visualizer
 
-# Run and deploy your AI Studio app
+A friendly tool to validate, parse, and visualize JSON5 data.
 
-This contains everything you need to run your app locally.
+JSON5 Visualizer lets you paste JSON5 input, validates it in real time, and renders an interactive, collapsible tree of the resulting data. You can also convert JSON5 to standard JSON with a single click.
 
-View your app in AI Studio: https://ai.studio/apps/ef9918e0-c78a-48f4-a8b5-d8b313ecbf22
+## Features
 
-## Run Locally
+- **Real-time validation** — parses your input as you type and shows errors immediately.
+- **Interactive tree** — expand/collapse nodes, with type-aware styling for strings, numbers, booleans, null, objects, and arrays.
+- **Expand / Collapse all** — quickly open or close the entire tree.
+- **Copy values** — copy any node or the full parsed result as standard JSON.
+- **Convert to JSON** — transform JSON5 input (comments, trailing commas, unquoted keys, etc.) into standard JSON.
+- **Line numbers** — synchronized with the input editor.
 
-**Prerequisites:**  Node.js
+## Tech Stack
 
+- [React 19](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [JSON5](https://json5.org/)
+- [Motion](https://motion.dev/) for animations
+- [lucide-react](https://lucide.dev/) for icons
+
+## Getting Started
+
+**Prerequisites:** Node.js
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+
+   ```bash
+   npm install
+   ```
+
+2. Run the app:
+
+   ```bash
+   npm run dev
+   ```
+
+   The app runs at `http://localhost:3000`.
+
+## Scripts
+
+| Script | Description |
+| --- | --- |
+| `npm run dev` | Start the development server on port 3000 |
+| `npm run build` | Build for production into `dist/` |
+| `npm run preview` | Preview the production build |
+| `npm run lint` | Type-check with `tsc --noEmit` |
+| `npm run clean` | Remove the `dist/` directory |
+
+## Project Structure
+
+```
+.
+├── index.html
+├── metadata.json
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── src
+    ├── App.tsx            # Main app: input editor + visualizer layout
+    ├── main.tsx           # React entry point
+    ├── index.css          # Tailwind + global styles
+    ├── components
+    │   └── JsonTree.tsx   # Recursive JSON tree node renderer
+    └── lib
+        └── utils.ts       # `cn` class-name helper
+```
+
+## License
+
+Apache-2.0
